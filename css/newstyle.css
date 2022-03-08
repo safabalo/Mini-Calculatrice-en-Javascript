@@ -16,22 +16,28 @@ main{
     height: 80px;
     width: 97%;
     background-color:rgb(255, 143, 255);
+    
 }
 .operations{
     width: 100%;
 }
-.btn{
+.button{
     border-radius: 50%;
     background-color:rgb(233, 232, 232);
     width: 70px;
     height: 70px;
+    
 }
-.btn-equal{
+
+#equal{
     background-color:rgb(197, 35, 247);
     border-radius: 50%;
     border: none;
     width: 70px;
     height: 70px;
+}
+#operation {
+    flex: 1 1 auto;
 }
 @media screen and (min-width: 433px) {
     .screen{
@@ -42,14 +48,15 @@ main{
         margin-top: 10px;
         width:90%;
     }
-    .btn{
+    .button{
         width: 75px;
         height: 75px;
     }
-    .btn-equal{
+    #equal{
         border: none;
         width: 75px;
         height: 75px;
+    }
 }
 @media screen and (min-width: 700px) {
     main{
@@ -57,11 +64,11 @@ main{
         margin-top: 10px;
         width:45%;
     }
-    .btn{
+    .button{
         width: 50px;
         height: 50px;
     }
-    .btn-equal{
+    #equal{
         width: 50px;
         height: 50px;
     }
@@ -72,4 +79,9 @@ main{
         margin-left: 35%;
         width: 23%;
     }
+    .button:hover{
+        background-color:rgb(197, 35, 247);
+    }
+        
+    
 }
