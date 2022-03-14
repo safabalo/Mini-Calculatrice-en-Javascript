@@ -7,40 +7,45 @@ main{
     margin-left: 20px;
     margin-top: 10px;
     width:90%;
-    border-bottom: blueviolet 5px inset;
-    border-left: blueviolet 5px inset;
+    border-bottom: rgb(46, 43, 226) 5px inset;
+    border-left: rgb(46, 43, 226) 5px inset;
     border-top: rgb(230, 230, 235) 5px inset;
     border-right: rgb(230, 230, 235) 5px inset;
+    background-color: black;
+    overflow: hidden;
 }
-.screen{
+.output{
     height: 80px;
     width: 97%;
-    background-color:rgb(255, 143, 255);
+    background-color: aquamarine;
     
 }
 .operations{
     width: 100%;
 }
-.button{
+button{
     border-radius: 50%;
     background-color:rgb(233, 232, 232);
     width: 70px;
     height: 70px;
-    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white !important;
 }
 
-#equal{
-    background-color:rgb(197, 35, 247);
+.equal{
+    background-color:rgb(46, 43, 226);
     border-radius: 50%;
     border: none;
     width: 70px;
     height: 70px;
 }
-#operation {
+.previous {
     flex: 1 1 auto;
 }
 @media screen and (min-width: 433px) {
-    .screen{
+    .output{
         height: 100px;
     }
     main{
@@ -48,11 +53,11 @@ main{
         margin-top: 10px;
         width:90%;
     }
-    .button{
+    button{
         width: 75px;
         height: 75px;
     }
-    #equal{
+    .equal{
         border: none;
         width: 75px;
         height: 75px;
@@ -64,11 +69,11 @@ main{
         margin-top: 10px;
         width:45%;
     }
-    .button{
+    button{
         width: 50px;
         height: 50px;
     }
-    #equal{
+    .equal{
         width: 50px;
         height: 50px;
     }
@@ -79,8 +84,8 @@ main{
         margin-left: 35%;
         width: 23%;
     }
-    .button:hover{
-        background-color:rgb(197, 35, 247);
+    button:hover{
+        background-color:rgb(46, 43, 226);
     }
         
     

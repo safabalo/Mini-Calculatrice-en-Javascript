@@ -11,34 +11,40 @@
 </head>
 <body>
     <main class=" d-flex flex-column rounded-2 mt-lg-5">
-        <section class="screen mt-2 mx-1 rounded-1 d-flex flex-column align-items-end" >
-            <p id="operation"></p>
-            <h2 id="display"></h2>
+        <section class="output mt-2 mx-1 rounded-1 d-flex flex-column align-items-end" >
+            <p class="previous"></p>
+            <h2 class="current"></h2>
         </section>
         <section class="mx-1 operations">
-                <div class=" mt-3">
-                    <button class="btn btn-white fs-2 mx-2 my-2 number button" onclick="calcule('7')">7</button>
-                    <button class="btn btn-white fs-2 mx-2 my-2 number button" onclick="calcule('8')">8</button>
-                    <button class="btn btn-white fs-2 mx-2 my-2 button" onclick="calcule('9')">9</button>
-                    <button class="btn btn-white fs-2 mx-2 my-2 button" onclick="operation('+')">+</button>
+            <div class=" mt-3">
+                <button class="btn fs-3 mx-2 my-2 all-clear">AC</button>
+                <button class="btn fs-2 mx-2 my-2 operator">%</button>
+                <button class="btn fs-2 mx-2 my-2 delete">C</button>
+                <button class="btn fs-2 mx-2 my-2 operator">÷</button>
+            </div>
+                <div>
+                    <button class="btn fs-2 mx-2 my-2 number" >7</button>
+                    <button class="btn fs-2 mx-2 my-2 number" >8</button>
+                    <button class="btn fs-2 mx-2 my-2 number" >9</button>
+                    <button class="btn fs-2 mx-2 my-2 operator">+</button>
                 </div>
                 <div>
-                    <button class="btn btn-white fs-2 mx-2 my-2 number button" onclick="calcule('4')">4</button>
-                    <button class="btn btn-white fs-2 mx-2 my-2 number button" onclick="calcule('5')">5</button>
-                    <button class="btn btn-white fs-2 mx-2 my-2 number button" onclick="calcule('6')">6</button>
-                    <button class="btn btn-white fs-2 mx-2 my-2 operator button" onclick="operation('-')">-</button>
+                    <button class="btn fs-2 mx-2 my-2 number ">4</button>
+                    <button class="btn fs-2 mx-2 my-2 number ">5</button>
+                    <button class="btn fs-2 mx-2 my-2 number ">6</button>
+                    <button class="btn fs-2 mx-2 my-2 operator">-</button>
                 </div>
                 <div>
-                    <button class="btn btn-white fs-2 mx-2 my-2 number button" onclick="calcule('1')">1</button>
-                    <button class="btn btn-white fs-2 mx-2 my-2 number button" onclick="calcule('2')">2</button>
-                    <button class="btn btn-white fs-2 mx-2 my-2 number button" onclick="calcule('3')">3</button>
-                    <button class="btn btn-white fs-2 mx-2 my-2 button" onclick="operation('x')">x</button>
+                    <button class="btn fs-2 mx-2 my-2 number">1</button>
+                    <button class="btn fs-2 mx-2 my-2 number">2</button>
+                    <button class="btn fs-2 mx-2 my-2 number">3</button>
+                    <button class="btn fs-2 mx-2 my-2 operator">x</button>
                 </div>
                 <div class="mb-3">
-                    <button class="btn btn-white fs-2 mx-2 my-2 button" onclick="calcule('.')">.</button>
-                    <button class="btn btn-white fs-2 mx-2 my-2 number button" onclick="calcule('0')">0</button>
-                    <button class="btn btn-white fs-2 mx-2 my-2 operator button" onclick="operation('÷')">÷</button>
-                    <button class="btn btn-white fs-2 mx-2 my-2" id ="equal" onclick="equals()">=</button>
+                    <button class="btn fs-2 mx-2 my-2 "> </button>
+                    <button class="btn fs-2 mx-2 my-2 number" >0</button>
+                    <button class="btn fs-2 mx-2 my-2 number">.</button>
+                    <button class="btn fs-2 mx-2 my-2 equal">=</button>
                 </div>
         </section>
     </main>
